@@ -1,0 +1,25 @@
+STORAGE ASSESSMENT REPORT
+
+1. Available Storage Devices
+Command: df -h
+Observation: The system shows multiple APFS volumes with total size around 460Gi. The main data volume has sufficient free space available (~292Gi free).
+
+2. Mounted File Systems
+Command: mount
+Observation: Multiple APFS volumes are mounted including root (/), Data, VM, Preboot, and Update partitions. All file systems are properly mounted and active.
+
+3. Disk Usage Statistics
+Command: df -h
+Observation: Around 32% of the main storage is used, indicating healthy disk utilization with no immediate storage pressure.
+
+4. Inode Utilization
+Command: df -i
+Observation: Inode usage is very low (0–1%), indicating the system has sufficient file capacity for creating new files.
+
+5. Storage Health Observations
+The system storage is healthy with adequate free space and low inode consumption. No signs of disk exhaustion or inode shortage are observed.
+
+6. Recommendations
+- Monitor disk usage periodically using df -h
+- Clean temporary files if usage increases
+- Maintain regular storage audits for performance optimization

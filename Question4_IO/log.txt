@@ -1,0 +1,2 @@
+System log entry 1
+System log entry 2

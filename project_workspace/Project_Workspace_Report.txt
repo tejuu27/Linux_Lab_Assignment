@@ -1,0 +1,28 @@
+PROJECT WORKSPACE REPORT
+
+1. Directory Structure Created
+Command: mkdir docs code
+Observation: Created separate folders for documentation and code organization.
+
+2. File Creation
+Command: touch docs/project_plan.txt
+Observation: Created an empty project plan file inside docs directory.
+
+3. Initial Permissions
+Command: ls -l docs
+Observation: File initially had default permissions -rw-r--r-- allowing read access to others.
+
+4. Modified Permissions
+Command: chmod 600 docs/project_plan.txt
+Observation: Permissions changed to -rw------- restricting access to only the owner.
+
+5. Ownership Details
+Command: stat docs/project_plan.txt
+Observation: File is owned by user 'tejushreem' and group 'staff'.
+
+6. Umask Value
+Command: umask
+Observation: Shows default permission mask used when creating new files.
+
+7. Security Explanation
+Linux file permissions ensure that sensitive project data is protected. By using chmod 600, we restricted access so only the file owner can read and modify the file, improving confidentiality and security of project resources.

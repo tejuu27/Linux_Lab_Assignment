@@ -1,0 +1,24 @@
+LINK ANALYSIS REPORT
+
+1. File Creation
+Command: echo "This is original file content" > original.txt
+Observation: Created a file with sample content for link testing.
+
+2. Inode Information
+Command: ls -li original.txt
+Observation: Original file has inode number 26187391.
+
+3. Hard Link Creation
+Command: ln original.txt hardlink.txt
+Observation: Hard link created sharing same inode as original file.
+
+4. Symbolic Link Creation
+Command: ln -s original.txt symlink.txt
+Observation: Symbolic link created with different inode pointing to original file.
+
+5. After Deleting Original File
+Command: rm original.txt
+Observation: Hard link still works and retains data, while symbolic link breaks.
+
+6. Conclusion
+Hard links share the same inode and directly reference file data. Symbolic links are separate files that only point to the original file path and break if the original file is deleted.

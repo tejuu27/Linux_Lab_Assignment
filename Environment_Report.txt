@@ -1,0 +1,31 @@
+ENVIRONMENT VERIFICATION REPORT
+
+1. Username
+Command: whoami
+Output: tejushreem
+Observation: Displays the current logged-in user account.
+
+2. Groups
+Command: groups
+Output: staff everyone localaccounts _appserverusr admin ...
+Observation: Shows all groups associated with the user account.
+
+3. Current Shell
+Command: echo $SHELL
+Output: /bin/zsh
+Observation: Indicates that the system is using Z shell as default shell.
+
+4. Current Working Directory
+Command: pwd
+Output: /Users/tejushreem/Linux_Lab_Assignment
+Observation: Shows the current directory where operations are being performed.
+
+5. Directory Listing
+Command: ls -l
+Output: total 0
+Observation: The directory is currently empty with no files or folders.
+
+6. Network Connectivity Test
+Command: ping google.com -c 4
+Output: 0% packet loss, successful replies received
+Observation: Confirms that the system has active internet connectivity and can reach external servers.
